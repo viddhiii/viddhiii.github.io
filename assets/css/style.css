@@ -456,3 +456,96 @@ footer p {
         padding-bottom: 30px;
     }
 }
+/* ── MOBILE FIXES ───────────────────────────── */
+
+/* Nav overflows on small screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 6px 0;
+    }
+
+    nav ul li a {
+        padding: 10px 14px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Header text too large on phones */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    header {
+        padding: 40px 0;
+    }
+}
+
+/* Projects grid — drop to 1 column on phones */
+@media (max-width: 600px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+/* Profile photo — shrink on mobile */
+@media (max-width: 768px) {
+    .profile-photo {
+        width: 180px;
+        height: 180px;
+    }
+
+    .about-content {
+        gap: 30px;
+    }
+}
+
+/* Section headings — too large on phones */
+@media (max-width: 480px) {
+    .section h2 {
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .project-card-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .contact-form {
+        padding: 24px 16px;
+    }
+
+    .skills-table {
+        padding: 16px;
+    }
+
+    .project-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+@media (max-width: 768px) {
+    .project-card-content h3 {
+        font-size: 1.2rem;
+    }
+}
